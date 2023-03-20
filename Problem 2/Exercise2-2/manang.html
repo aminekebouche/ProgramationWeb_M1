@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manang</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <header id = "top">
+        <!-- TODO 1: clicking on either image or svg should take the user back to the homepage -->
+        <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">
+            <img src="wikipedia.png" aria-hidden="true">
+            <img src="wikipedia-tagline-en.svg" alt="Wikipedia" class="wiki">
+        </a>
+        <form method="GET" action="https://fr.wikipedia.org/w/index.php">
+            <!-- TODO 2: When hitting enter, search for the entered term on Wikipedia -->
+            <input type="text" name="search" id="wikisearch">
+        </form>
+    </header>
+    <div class="navmain">
+        <div class="navbar">
+            <nav>
+                <!-- TODO 3: link to correct part of the page -->
+                <ul>
+                    <li id="litop"><a href="#top">(Top)</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#seeAlso">See also</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mainbar">
+            <main>
+                <h1>Manang</h1>
+        
+                <!-- TODO 4: "Manang District" should link to https://en.wikipedia.org/wiki/Manang_District -->
+                <p>Manang (Nepali: मनाङ) is a town in the <a href="https://en.wikipedia.org/wiki/Manang_District">Manang District</a>  of Nepal. It is located at 28°40'0N 84°1'0E with an elevation of 3,519 metres (11,545 ft). According to the preliminary result of the 2011 Nepal census it has a population of 6,527 people living in 1,495 individual households. Its population density is 3 persons/km2.</p>
+                <p>It is situated in the broad valley of the Marshyangdi River to the north of the Annapurna mountain range. The river flows to the east. To the west, the 5,416-metre (17,769 ft) Thorong La pass leads to Muktinath shrine and the valley of the Gandaki River. To the north there is the Chulu East peak of 6,584 m (21,601 ft). Most groups trekking around the Annapurna range will take resting days in Manang to acclimatize to the high elevation, before taking on Thorong La pass. The village is situated on the northern slope, which gets the most sunlight and the least snow cover in the winter. The cultivation fields are on the north slope with terraces.</p>
+                <p>There are now motorable road as well as trails where goods are transported on jeep or mule trains or carried by porters. A small airport, located 2.5 km (1.6 mi) east of the town, used to serve the whole valley although has not had any commercial flights since 2012 https://www.aviationnepal.com/inactive-manang-airport-causes-locals-to-face-major-problems/. The airport was begun in 1985. The development of a trail linking Manang to the Annapurna Conservation Area was finished in February 2011 and has brought many benefits to the villagers and the area.</p>
+                <p>Besides catering to trekkers, there is some agriculture and herding of yaks. There is a medical centre, which specializes in high-altitude sickness.</p>
+        
+                <h2 id ="Gallery">Gallery</h2>
+                <div class="gallery-item">
+                    <img src="img/street.jpg" alt="Main street of Manang with yaks">
+                    <div>Main street of Manang with yaks</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/glacier.jpg" alt="Gangapurna glacier and lake near Manang">
+                    <div>Gangapurna glacier and lake near Manang</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/site.JPG" alt="A view of Gangapurna Lake situated at Manang district">
+                    <div>A view of Gangapurna Lake situated at Manang district</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/lake.JPG" alt="A view of Gangapurna Lake situated at Manang district">
+                    <div>Gangapurna Lake close to Manang</div>
+                </div>
+        
+                <h2 id ="seeAlso">See also</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Manang_language">Manang Language</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Thonje">Thonje</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Milarepa_Cave,_Gandaki">Milarepa Cave, Gandaki</a></li>
+                </ul>
+            </main>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Text is available under the Creative Commons Attribution-ShareAlike License 3.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+        <ul>
+            <li><a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy policy</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+            <li><a href="https://developer.wikimedia.org">Developers</a></li>
+            <li><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+            <li><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

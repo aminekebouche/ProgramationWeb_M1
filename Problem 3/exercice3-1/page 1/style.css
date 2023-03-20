@@ -1,0 +1,41 @@
+body {
+    background-color: #a19999;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #new-fact-btn {
+    background-color: #47A8E6;
+    border-color: #47A8E6;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  #new-fact-btn:hover {
+    background-color: #01375e;
+    border-color: #01375e;
+  }
+  
+  #fact-list {
+    margin-top: 20px;
+  }
+  
+  
+  .list-group-item:hover {
+    background-color: rgb(236, 117, 117);
+  }
+  li {
+    margin-bottom: 20px;
+  }
+  

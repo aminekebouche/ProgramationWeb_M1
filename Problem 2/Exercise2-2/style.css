@@ -1,0 +1,76 @@
+header, .navmain, footer {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+  }
+
+header{
+  align-items: center;
+  background-color: beige;
+}
+
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px; 
+}
+
+
+input[type="text"]:focus {
+  border: 2px solid #555; 
+}
+
+
+.navbar{
+  flex-basis: 20%;
+  position: fixed;
+  background-color: azure;
+  border: rgb(206, 12, 12) solid;
+}
+
+.mainbar{
+  flex-basis: 80%;
+  margin-left: 20%;
+  border: #555;
+}
+
+
+header a {
+  flex: 2;
+  
+}
+
+.wiki {
+  height: 30px; 
+  padding-bottom: 30px;
+}
+
+form {
+  flex: 2; 
+  margin: 30px;
+}
+
+@media (max-width: 576px) {
+  .navmain{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .navbar{
+    position: relative;
+    flex-basis: 100%;
+    background-color: rgb(69, 156, 18);
+  }
+
+  #litop{
+    display: none;
+  }
+  
+  .mainbar{
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'joke/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Welcome to Joke application !</h1>
+    <a href="{% url 'joke:addView' %}">Share my Jokes</a>
+    {% for joke in jokes %}
+        <div class= "joke" {% if forloop.last %}id="last-child" style="background-color: #ffffcc; border: 1px solid #ffcc00; padding: 10px" {% endif %}>
+            <h3>{{ joke.username }} (ID: {{ joke.id }})</h3>
+            <p>{{ joke.content }}</p>
+            <p><a href="{% url 'joke:entry_view' id=joke.id %}">Share this entry</a></p>
+        </div>
+    {% endfor %}
+
+    {% if jokes %}
+    <script>
+        setTimeout(function () {
+            var highlightedJoke = document.getElementById("last-child");
+            if (highlightedJoke) {
+                highlightedJoke.removeAttribute("style");
+            }
+        }, 1000);
+    </script>
+    {% endif %}
+
+
+    
+</body>
+</html>
